@@ -1,0 +1,208 @@
+@import url(normalize.css);
+@font-face {
+  font-family: "RADIOLAND";
+  src: url("../fonts/RADIOLAND.ttf"); }
+body {
+  background: #222; }
+  body header {
+    margin: 0 auto;
+    padding: 1em;
+    background: #f8f8f8 url("../img/pattr.png"); }
+    body header ul {
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: 2em;
+      text-align: center;
+      color: #222; }
+      body header ul li {
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+        width: 13em;
+        height: 13em;
+        margin: 0 1em; }
+      body header ul #timer {
+        width: 15em;
+        position: relative; }
+        body header ul #timer div {
+          width: 100%;
+          text-align: center; }
+          body header ul #timer div p {
+            font-size: 4.5em;
+            font-family: "RADIOLAND"; }
+        body header ul #timer #lapsBox {
+          position: absolute;
+          top: 1em;
+          left: 0em;
+          width: 100%;
+          background: #222;
+          padding: 0;
+          color: white;
+          text-align: center; }
+          body header ul #timer #lapsBox p {
+            font-size: 1em;
+            display: inline-box;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold; }
+            body header ul #timer #lapsBox p span {
+              color: rgba(255, 255, 255, 0.8); }
+      body header ul .playerBox {
+        font-weight: bold;
+        background: white;
+        vertical-align: top;
+        text-align: center;
+        position: relative;
+        border: 0.1em solid rgba(0, 0, 0, 0.1); }
+        body header ul .playerBox p {
+          font-size: 5em;
+          position: relative;
+          z-index: 0; }
+        body header ul .playerBox span {
+          background: #222;
+          color: white;
+          width: 100%;
+          text-align: center;
+          position: absolute;
+          top: 0em;
+          left: 0em;
+          font-size: 2em;
+          z-index: 1; }
+  body aside {
+    background: white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow-y: hidden; }
+    body aside div {
+      background: red;
+      width: 15em;
+      height: 100%;
+      position: relative; }
+      body aside div p {
+        color: white;
+        font-weight: bold;
+        vertical-align: bottom;
+        margin: 0 auto;
+        padding: 1em;
+        position: relative; }
+      body aside div div {
+        width: 5em;
+        height: 3em;
+        background: red;
+        position: absolute;
+        right: -2.5em;
+        top: 1em;
+        transform: rotate(55deg); }
+  body section {
+    background: #222;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center; }
+    body section #stats {
+      margin: 0 auto;
+      padding: 0; }
+      body section #stats li {
+        width: 23%;
+        display: inline-block;
+        margin: 2em 0; }
+        body section #stats li h2 {
+          color: white; }
+        body section #stats li img {
+          width: 100%;
+          margin: 2%; }
+        body section #stats li table {
+          margin: 0 auto;
+          padding: 1em;
+          width: 100%;
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 1.3em; }
+          body section #stats li table tbody {
+            color: white;
+            font-weight: normal; }
+            body section #stats li table tbody tr {
+              padding: 1em 0; }
+              body section #stats li table tbody tr:nth-child(odd) {
+                background: rgba(255, 255, 255, 0.2); }
+              body section #stats li table tbody tr td {
+                padding: 0.2em 0; }
+                body section #stats li table tbody tr td:nth-child(1) {
+                  color: #14be96;
+                  font-weight: bold; }
+            body section #stats li table tbody .best {
+              background: white !important;
+              color: #14be96 !important; }
+
+#login {
+  background: #f8f8f8 url("../img/pattr.png");
+  text-align: center; }
+  #login .logo {
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 10%; }
+
+.bgBlue {
+  background: #327ccb !important;
+  color: white; }
+
+.bgGreen {
+  color: white;
+  background: #00b057 !important; }
+
+.bgRed {
+  color: white;
+  background: #cc0000 !important; }
+
+.bgYellow {
+  color: white;
+  background: #fcd920 !important; }
+
+.nameBlue {
+  border-bottom: 0.2em solid #327ccb; }
+
+.nameGreen {
+  border-bottom: 0.2em solid #00b057; }
+
+.nameRed {
+  border-bottom: 0.2em solid #cc0000; }
+
+.nameYellow {
+  border-bottom: 0.2em solid #fcd920; }
+
+.live {
+  background: white; }
+  .live div {
+    background: #00b057; }
+    .live div p {
+      color: white; }
+      .live div p div {
+        background: #00b057; }
+
+.wait {
+  background: white; }
+  .wait div {
+    background: #fcd920; }
+    .wait div p {
+      color: #222; }
+      .wait div p div {
+        background: #fcd920; }
+
+.stop {
+  background: white; }
+  .stop div {
+    background: #cc0000; }
+    .stop div p {
+      color: white; }
+      .stop div p div {
+        background: #cc0000; }
+
+.out {
+  background: white; }
+  .out div {
+    background: #222; }
+    .out div p {
+      color: white; }
+      .out div p div {
+        background: #222; }

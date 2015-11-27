@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Torque Engine</title>
+    <link type="text/css" href="http://localhost/assets/css/style.css" rel="stylesheet" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://localhost/assets/js/jquery.js"></script>
+    <script src="http://localhost/assets/js/ion.sound.js"></script>
+    <script src="http://localhost/assets/js/countdown.min.js"></script>
+    <script src="http://localhost/assets/js/main.js"></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li id="pj1" class="playerBox bgBlue">
+                <span class="time">00:00:00</span>
+                <p class="position">#</p>
+            </li>
+            <li id="pj2" class="playerBox bgRed">
+                <span class="time">00:00:00</span>
+                <p class="position">#</p>
+            </li>
+            <li id="timer">
+                <div>
+                    <p class="countdown">00:00</p>
+                </div>
+                <div id="lapsBox">
+                    <p><span>VUELTA</span> 0 / 5</p>
+                </div>
+            </li>
+            <li id="pj3" class="playerBox bgGreen">
+                <span class="time">00:00:00</span>
+                <p class="position">#</p>
+            </li>
+            <li id="pj4" class="playerBox bgYellow">
+                <span class="time">00:00:00</span>
+                <p class="position">#</p>
+            </li>
+        </ul>
+    </header>
+    <aside id="titlePanel" class="live">
+        <div><p class="state">En carrera</p><div></div></div>
+    </aside>
+    <section>
+        <ul id="stats">
+            <li id="statspj1">
+                <img src="assets/img/autos/naranja.png">
+                <h2 class="nameBlue">PLAYER 1</h2>
+                <table>
+                    <thead>
+                        <tr><th>LAP</th><th>TIME</th></tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </li>
+            <li id="statspj2">
+                <img src="assets/img/autos/celeste.png">
+                <h2 class="nameRed">PLAYER 2</h2>
+                <table>
+                    <thead>
+                        <tr><th>LAP</th><th>TIME</th></tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </li>
+            <li id="statspj3">
+                <img src="assets/img/autos/original.png">
+                <h2 class="nameGreen">PLAYER 3</h2>
+                <table>
+                    <thead>
+                        <tr><th>LAP</th><th>TIME</th></tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </li>
+            <li id="statspj4">
+                <img src="assets/img/autos/azul.png">
+                <h2 class="nameYellow">PLAYER 4</h2>
+                <table>
+                    <thead>
+                        <tr><th>LAP</th><th>TIME</th></tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

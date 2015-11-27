@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Torque Engine</title>
+    <link type="text/css" href="http://localhost/assets/css/style.css" rel="stylesheet" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://localhost/assets/js/jquery.js"></script>
+</head>
+<body id="login">
+    <header>
+        <img class="logo" src="assets/img/logo.png">
+        <h2 class="messages">Esperando ordenes desde el controlador...</h2>
+    </header>
+    <script>
+        var socket = io();
+        socket.on('message', function(msg){
+            console.log(msg);
+            if(msg == 'start'){
+                window.location.assign("./live");
+            }else{
+                if(msg == "cdresults"){
+                    $('.messages').html("Pulse para iniciar el sistema");
+                }else{
+                    $('.messages').html("Esperando ordenes desde el controlador... Pulse para continuar.");
+                } 
+            }
+            
+                  
+            
+        });
+    </script>
+</body>
+</html>
